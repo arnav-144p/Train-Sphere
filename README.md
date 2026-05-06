@@ -13,6 +13,8 @@ The app lets you:
 - Use **Compare two models** so both algorithms are evaluated on the **same train/test split** (fair comparison), with a clear **“best on this run”** banner.
 - After training in **Single model** mode, use **single input prediction**: dynamic fields for each feature, **Predict single input** calls `POST /predict`, and the UI shows a highlighted **Predicted class** card.
 - **Reset model** clears the server-side trained model and disables prediction until you train again.
+- <img width="486" height="639" alt="image" src="https://github.com/user-attachments/assets/565972ac-9ef1-4a96-b76b-365cbd037a5b" />
+
 
 ## Sample GUI results
 
@@ -26,6 +28,8 @@ Example setup:
 - **Dataset:** Iris
 - **Model:** Decision Tree
 - **Parameters:** `max_depth = 5`, `min_samples_split = 2`
+- <img width="489" height="684" alt="image" src="https://github.com/user-attachments/assets/7229e055-f33f-447c-8104-94a9e16f9060" />
+
 
 Result shown in the GUI:
 
