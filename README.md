@@ -14,6 +14,51 @@ The app lets you:
 - After training in **Single model** mode, use **single input prediction**: dynamic fields for each feature, **Predict single input** calls `POST /predict`, and the UI shows a highlighted **Predicted class** card.
 - **Reset model** clears the server-side trained model and disables prediction until you train again.
 
+## Sample GUI results
+
+These screenshots show Train Sphere running on the built-in **Iris** classification dataset with `test_size = 0.2` and `random_state = 42`.
+
+### Single model training
+
+Example setup:
+
+- **Task type:** Classification
+- **Dataset:** Iris
+- **Model:** Decision Tree
+- **Parameters:** `max_depth = 5`, `min_samples_split = 2`
+
+Result shown in the GUI:
+
+| Metric | Score |
+|--------|-------|
+| Accuracy | 93.33% |
+| Precision | 93.33% |
+| Recall | 93.33% |
+| F1 | 93.33% |
+
+![Train Sphere single model Iris results](docs/screenshots/train-sphere-single-results.png)
+
+### Two-model comparison
+
+Example comparison setup:
+
+- **Task type:** Classification
+- **Dataset:** Iris
+- **Model A:** Decision Tree (`max_depth = 4`, `min_samples_split = 2`)
+- **Model B:** KNN (`k = 5`)
+- **Same split:** `test_size = 0.2`, `random_state = 42`
+
+Result shown in the GUI:
+
+| Model | Accuracy |
+|-------|----------|
+| Decision Tree | 93.33% |
+| KNN | 100.00% |
+
+**Best on this run:** KNN with **100.00% accuracy**.
+
+![Train Sphere Decision Tree vs KNN comparison](docs/screenshots/train-sphere-model-comparison.png)
+
 ## Requirements
 
 - **Python** 3.10+ (recommended)
@@ -109,15 +154,10 @@ Assumes features are conditionally independent given the class and uses Gaussian
 
 ## Screenshots
 
-Add your own captures under `docs/screenshots/` (create the folder if needed) and link them here, for example:
+The README screenshots are stored in `docs/screenshots/`:
 
-- `docs/screenshots/dashboard-overview.png` — full dashboard after training on Iris.
-- `docs/screenshots/metrics-and-charts.png` — model performance + visualization grid.
-- `docs/screenshots/single-prediction.png` — feature inputs and highlighted prediction card.
-
-```markdown
-![Dashboard overview](docs/screenshots/dashboard-overview.png)
-```
+- `docs/screenshots/train-sphere-single-results.png` - Iris Decision Tree training output.
+- `docs/screenshots/train-sphere-model-comparison.png` - Iris Decision Tree vs KNN comparison output.
 
 ## Project structure
 
