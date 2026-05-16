@@ -112,6 +112,7 @@ class CDP:
             "Runtime.evaluate",
             {
                 "expression": expression,
+                
                 "awaitPromise": await_promise,
                 "returnByValue": True,
                 "userGesture": True,
