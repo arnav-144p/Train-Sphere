@@ -123,6 +123,7 @@ class CDP:
 
     def eval_retry(self, expression: str, await_promise: bool = True, timeout: float = 60, tries: int = 5):
         last_error: Exception | None = None
+        
         for _ in range(tries):
             try:
                 return self.eval(expression, await_promise=await_promise, timeout=timeout)
