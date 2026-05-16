@@ -75,6 +75,7 @@ class CDP:
 
     def _recv_frame(self) -> str:
         first, second = self._recv_exact(2)
+        
         opcode = first & 0x0F
         length = second & 0x7F
         if length == 126:
