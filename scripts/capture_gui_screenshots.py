@@ -12,6 +12,7 @@ import urllib.request
 from pathlib import Path
 
 
+
 ROOT = Path(__file__).resolve().parents[1]
 OUT_DIR = ROOT / "docs" / "screenshots"
 CHROME = Path(r"C:\Program Files\Google\Chrome\Application\chrome.exe")
