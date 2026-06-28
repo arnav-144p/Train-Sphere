@@ -2,6 +2,7 @@
 
 A full-stack web application for training and comparing classical machine-learning classifiers powered by **scikit-learn**, **Flask**, and **React (Vite)** with **Tailwind CSS**, **Recharts**, **lucide-react**, and **react-hot-toast**.
 
+
 ## Project overview
 
 The app lets you:
