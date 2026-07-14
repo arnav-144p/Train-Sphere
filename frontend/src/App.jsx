@@ -8,6 +8,7 @@ const API_BASE = import.meta.env.VITE_API_URL ?? "/api";
 const ALGO_OPTIONS = {
   classification: [
     { value: "decision_tree", label: "Decision Tree" },
+    
     { value: "knn", label: "KNN" },
     { value: "naive_bayes", label: "Naive Bayes" },
     { value: "logistic_regression", label: "Logistic Regression" },
