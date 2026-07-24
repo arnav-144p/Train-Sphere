@@ -14,6 +14,7 @@ import numpy as np  # noqa: E402
 import pandas as pd  # noqa: E402
 from sklearn.datasets import load_iris, load_wine  # noqa: E402
 from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor  # noqa: E402
+
 from sklearn.linear_model import LinearRegression, LogisticRegression  # noqa: E402
 from sklearn.metrics import (  # noqa: E402
     accuracy_score,
