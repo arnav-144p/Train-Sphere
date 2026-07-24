@@ -91,6 +91,7 @@ def _binary_roc(model: Any, X_test: np.ndarray, y_test: np.ndarray) -> dict[str,
         return None
 
 
+
 def _evaluate_classification(
     model: Any,
     algorithm: str,
